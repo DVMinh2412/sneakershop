@@ -1,0 +1,11 @@
+.wrapper {
+    max-width: 1380px;
+    margin: 30px auto;
+    display: flex;
+    .side-bar {
+        flex: 3;
+    }
+    .content {
+        flex: 8;
+    }
+}

@@ -1,0 +1,140 @@
+.wrapper {
+    max-width: 1380px;
+    margin: 0 auto;
+    .product-top {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 0.5px solid rgb(224, 221, 221);
+        h2 {
+            font-size: 4.6rem;
+            font-weight: 500;
+        }
+        p {
+            font-size: 1.3rem;
+        }
+    }
+
+    .product-center {
+        margin: 40px auto;
+        display: flex;
+        justify-content: space-evenly;
+        .image {
+            width: 500px;
+            height: 500px;
+            border: 1px solid rgb(185, 183, 183);
+            position: relative;
+            .sale {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: var(--primary-color);
+                color: white;
+                font-weight: 900;
+                right: -20px;
+                top: -20px;
+            }
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .content {
+            text-align: left;
+            .name, .price {
+                font-size: 2.2rem;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+            .price {
+                padding-bottom: 15px;
+                border-bottom: 1px solid #787878;
+            }
+            .description {
+                color: #787878;
+                font-size: 1.4rem;
+                margin-left: 40px;
+                margin-bottom: 20px;
+                li {
+                    list-style: circle;
+                }
+            }
+            .add-to-cart {
+                height: 50px;
+                display: flex;
+                align-items: center;
+                border: 1px solid #d5d5d5;
+                margin: 40px 0;
+                .quantity {
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.4rem;
+                    color: #787878;
+                    padding: 0 20px;
+                    span {
+                        &:first-child {
+                            margin-right: 10px;
+                        }
+                    }
+                    .icon {
+                        margin: 0 10px;
+                        &:hover {
+                            cursor: pointer;
+                            color: var(--primary-color);
+                        }
+                    }
+                }
+                button {
+                    flex: 1;
+                    height: 100%;
+                    background-color: var(--primary-color);
+                    color: white;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    padding: 0 20px;
+                    border: 1px solid var(--primary-color);
+                    cursor: pointer;
+                }
+            }
+            .add-to-wishlist {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-bottom: 30px;
+                cursor: pointer;
+                &:hover {
+                    color: var(--primary-color);
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+            h4 {
+                font-weight: 500;
+            }
+        }
+    }
+
+    .product-bottom {
+        margin: 40px 0;
+        h3 {
+            width: fit-content;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        .related-products {
+            padding-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+    }
+}

@@ -1,0 +1,157 @@
+.wrapper {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 238px;
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        .footer-top_right, 
+        .footer-top_center, 
+        .footer-top_left {
+            flex: 1;
+            background-color: #222325;
+            display: flex;
+            align-items: center;
+            padding: 10px 5px 10px 20px;
+            text-align: left;
+            font-weight: 300;
+            .content {
+                margin-left: 20px;
+            }
+            h3 {
+                font-weight: 500;
+                font-size: 2.2rem;
+            }
+            p {
+                color: var(--primary-color);
+                text-transform: uppercase;
+                font-size: 3rem;
+                font-weight: 400;
+                position: relative;
+                cursor: pointer;
+                &::after {
+                    content: "";
+                    width: 0%;
+                    height: 2px;
+                    background-color: var(--primary-color);
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    transition: width linear .3s;
+                }
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+            span {
+                font-size: 1.2rem;
+                color: rgba($color: #fff, $alpha: 0.6);
+            }
+            .icon {
+                font-size: 9rem;
+                
+            }
+        }
+    }
+    .footer-center {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        .footer-center_infor,
+        .footer-center_service,
+        .footer-center_quickLink,
+        .footer-center_contactUs {
+            flex: 1;
+            text-align: left;
+        }
+        h4 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        li {
+            font-size: 1.3rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+            max-width: fit-content;
+            position: relative;
+            cursor: pointer;
+            &::after {
+                content: "";
+                width: 0%;
+                height: 2px;
+                background-color: var(--primary-color);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transition: width linear .3s;
+            }
+            &:hover::after, &:hover {
+                width: 100%;
+                color: var(--primary-color);
+            }
+        }
+        .footer-center_contactUs {
+            .send-email {
+                display: flex;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            input {
+                min-width: 252px;
+                font-size: 1.3rem;
+                font-weight: 300;
+                padding: 15px 15px;
+                border: 2px solid var(--primary-color);
+                background-color: #000;
+                color: #fff;
+                &:focus {
+                    color: #000;
+                    background-color: #fff;
+                }
+            }
+            .btn-send {
+                background-color: var(--primary-color);
+                padding: 0 12px;
+                cursor: pointer;
+                .icon {
+                    font-size: 2.5rem;
+                    color: #fff;
+                }
+            }
+            p {
+                font-size: 1.2rem;
+                opacity: 0.5;
+                margin-bottom: 20px;
+            }
+            .social-media {
+                display: flex;
+                gap: 20px;
+                cursor: pointer;
+                .icon-social {
+                    font-size: 2rem;
+                    transition: all linear .2s;
+                    &:hover {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        margin-top: 40px;
+        display: flex;
+        padding-top: 30px;
+        justify-content: space-between;
+        border-top: 1px solid rgb(110, 106, 106);
+        p {
+            font-size: 1.2rem;
+            color: rgb(110, 106, 106);
+        }
+        .footer-bottom_paymentMethod {
+            display: flex;
+            gap: 20px;
+        }
+    }
+}
