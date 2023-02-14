@@ -70,7 +70,7 @@ function Header() {
             </div>
             <div className = {cx('header-center')}>
                 <div className={cx('logo')}>
-                    <img src= "./logo.PNG" alt='logo'/>
+                    <img src= "https://scontent.fhan17-1.fna.fbcdn.net/v/t1.15752-9/330792045_906205124059294_4085629072268103409_n.png?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=w30CTezSq7IAX_RnyXg&_nc_ht=scontent.fhan17-1.fna&oh=03_AdT55uGOVz3rwBDzmVdqx41VVG7arVzHhVzJZKKEJV-dxA&oe=6412FB1E" alt='logo'/>
                 </div>
                 <div className={cx('search')}>
                     <select name='clothing' className= {cx('clothing')} onChange = {handleSelection}>
