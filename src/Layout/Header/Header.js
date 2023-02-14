@@ -70,7 +70,7 @@ function Header() {
             </div>
             <div className = {cx('header-center')}>
                 <div className={cx('logo')}>
-                    <img src='../../image/logo/logo.png' alt='logo'/>
+                    <img src= "./logo.PNG" alt='logo'/>
                 </div>
                 <div className={cx('search')}>
                     <select name='clothing' className= {cx('clothing')} onChange = {handleSelection}>
