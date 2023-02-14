@@ -3,7 +3,7 @@ import axios, { all } from "axios";
 export const getData = async (item_name) => {
     if(item_name !== "All") {
         try {
-            const res = await axios.get(`http://localhost:8080/${item_name}`);
+            const res = await axios.get(`https://json-server-delta-hazel.vercel.app/${item_name}`);
             return (res.data)
         } catch (error) {
             console.log("error")
